@@ -7,7 +7,7 @@ def get_version_from_file():
     # get version number from __init__ file
     # before module is installed
 
-    fname = 'sphinx_pdj_theme/__init__.py'
+    fname = 'sphinx_x7_theme/__init__.py'
     with open(fname) as f:
         fcontent = f.readlines()
     version_line = [l for l in fcontent if 'VERSION' in l][0]
@@ -33,19 +33,19 @@ LONG_DESCRIPTION = get_long_description_from_file()
 
 
 setup(
-    name='sphinx_pdj_theme',
+    name='sphinx_x7_theme',
     version=VERSION,
-    url='https://github.com/jucacrispim/sphinx_pdj_theme',
+    url='https://github.com/keesj-exset/sphinx_x7_theme',
     license='MIT',
-    author='Juca Crispim',
-    author_email='juca@poraodojuca.net',
-    description='PdJ for Sphinx',
+    author='Kees Jongenburger',
+    author_email='kees.jongenburger@exsetlabs.com',
+    description='X7 for Sphinx',
     long_description=LONG_DESCRIPTION,
-    packages=['sphinx_pdj_theme'],
+    packages=['sphinx_x7_theme'],
     include_package_data=True,
     entry_points={
         'sphinx.html_themes': [
-            'sphinx_pdj_theme = sphinx_pdj_theme',
+            'sphinx_x7_theme = sphinx_x7_theme',
         ]
     },
     classifiers=[

@@ -10,4 +10,4 @@ def get_html_theme_path():
 
 
 def setup(app):
-    app.add_html_theme('sphinx_pdj_theme', get_html_theme_path())
+    app.add_html_theme('sphinx_x7_theme', get_html_theme_path())
